@@ -1,0 +1,15 @@
+header {grid-area: header;}
+nav {grid-area: nav;}
+main {grid-area: main;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    'header header header nav nav nav'
+    'main main main main aside aside'
+    'footer footer footer footer footer footer';
+    gap: 15px;
+    padding: 10px;
+}

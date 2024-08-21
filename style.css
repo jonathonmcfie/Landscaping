@@ -1,0 +1,4 @@
+.ThemeButton {
+    content: url("theme.svg");
+    fill: red;
+}
