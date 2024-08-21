@@ -1,4 +1,55 @@
-.ThemeButton {
-    content: url("theme.svg");
-    fill: red;
+:root {
+    --fullBG: #F2F2F2;
+    --objectBG: #C0D9D0;
+    --border: #02734A;
+    --text: #01402E;
+    --theme: url("theme-light.svg");
 }
+
+.dark-mode {
+    --fullBG: #01402E;
+    --objectBG: #02734A;
+    --border: #C0D9D0;
+    --text: #F2F2F2;
+    --theme: url("theme-dark.svg");
+}
+
+body {
+    background-color: var(--fullBG);
+}
+
+main {
+    background-color: var(--objectBG);
+    outline: 2.5px solid var(--border);
+    border-radius: 5px;
+}
+
+header {
+    background-color: var(--objectBG);
+    outline: 2.5px solid var(--border);
+    border-radius: 5px;
+}
+
+nav {
+    background-color: var(--objectBG);
+    outline: 2.5px solid var(--border);
+    border-radius: 5px;
+}
+
+aside {
+    background-color: var(--objectBG);
+    outline: 2.5px solid var(--border);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--objectBG);
+    outline: 2.5px solid var(--border);
+    border-radius: 5px;
+}
+
+.ThemeButton {
+    content: var(--theme);
+    height: 500px;
+}
+
