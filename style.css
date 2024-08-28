@@ -30,10 +30,19 @@ header {
     border-radius: 5px;
 }
 
+header h1 {
+    float: right;
+}
+
+header img {
+    float: left;
+}
+
 nav {
     background-color: var(--objectBG);
     outline: 2.5px solid var(--border);
     border-radius: 5px;
+    font-size: 20px;
 }
 
 aside {
@@ -48,8 +57,23 @@ footer {
     border-radius: 5px;
 }
 
-.ThemeButton {
-    content: var(--theme);
-    height: 500px;
+footer p {
+    float: left;
 }
 
+nav img {
+    max-height: 1.25em;
+    float: right;
+}
+
+nav button {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    font-size: 1em;
+    background-color: var(--fullBG);
+    border-radius: 0.45em;
+    float: left;
+    margin: 5px;
+}
